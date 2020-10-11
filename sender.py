@@ -44,11 +44,10 @@ def send_message(service, user_id, message):
         raise error
 
 
-def main(sender, to, subject, message_text, cc=None):
+def main(sender, to, subject, message_text, role, cc=None):
 
-    creds = get_credential(role="sender")
+    creds = get_credential(role=role)
     service = build("gmail", "v1", credentials=creds, cache_discovery=False)
-    print("sender", sender)
     message = create_message(
             sender, to, subject, message_text, cc=cc
         )
@@ -60,7 +59,7 @@ if __name__ == "__main__":
     sender = args[1]
     to = args[2]
     subject = args[3]
-    message_text_file_path = "mails/message.txt"
+    message_text_file_path = "mails/draft/test.txt"
 
     #logging.basicConfig(level=logging.DEBUG)
 
@@ -72,4 +71,5 @@ if __name__ == "__main__":
         to=to,
         subject=subject,
         message_text=message_text,
+        role="sender"
     )

@@ -32,8 +32,7 @@ def decode_base64url_data(data):
     return decoded_message
 
 
-def list_message(service, user_id, query, count=3):
-    messages = {}
+def get_message(service, user_id, query, count=1):
     try:
         message_ids = (
             service.users()
@@ -47,63 +46,43 @@ def list_message(service, user_id, query, count=3):
             return []
 
         for message_id in message_ids["messages"]:
-            message_detail = (
+            message_raw = (
                 service.users()
                 .messages()
                 .get(userId="me", id=message_id["id"], format = "raw")
                 .execute()
             )
-            '''
-            message = {}
-            message["id"] = message_id["id"]
-            # accept only plain text
-            if 'data' in message_detail['payload']['body']:
-                message["body"] = decode_base64url_data(
-                    message_detail["payload"]["body"]["data"]
-                )
 
-            message["subject"] = [
-                header["value"]
-                for header in message_detail["payload"]["headers"]
-                if header["name"] == "Subject"
-            ][0]
+            message_components = (
+                service.users()
+                .messages()
+                .get(userId="me", id=message_id["id"])
+                .execute()
+            )
 
-            message["from"] = [
-                header["value"]
-                for header in message_detail["payload"]["headers"]
-                if header["name"] == "From"
-            ][0]
-            logger.info(message_detail["snippet"])
-            messages[message_id["id"]] = message
-            '''
-            #print("RAW: ", message_detail["raw"])
-            print(decode_base64url_data(
-                message_detail["raw"]
-            ))
-        return messages
+            raw_message =  decode_base64url_data(message_raw["raw"])
+            message_body = decode_base64url_data(message_components["payload"]["body"]["data"])
+            return raw_message, message_body
 
     except errors.HttpError as error:
         print("An error occurred: %s" % error)
 
 
-def main(query, tag=None, count=3):
+def main(query, message_file_path):
     creds = get_credential(role="receiver")
     service = build("gmail", "v1", credentials=creds, cache_discovery=False)
     # get list of labels
     labels = list_labels(service, "me")
     #target_label_ids = [label["id"] for label in labels if label["name"] == tag]
     #messages = list_message(service, "me", query, target_label_ids, count=count)
-    print(query)
-    messages = list_message(service, "me", query, count=count)
-    if messages:
-        return json.dumps(messages, ensure_ascii=False, indent=4, separators=(',', ': '))
-    else:
-        return None
+    raw_message, message_body = get_message(service, "me", query, count=1)
+    #someimplementation
+    with open(message_file_path, mode="w") as f:
+        f.write(raw_message + '\n\n' + message_body)
 
 
 if __name__ == "__main__":
     args = sys.argv
     send_from = args[1]
     query="from:"+send_from
-    messages_ = main(query=query, tag='SPAM', count=3)
-    print(messages_)
+    main(query=query, message_save_file_path="mails/inbox/test.eml")

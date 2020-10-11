@@ -1,4 +1,4 @@
-import utils
+from classifier import utils
 
 # c is very small value which represent that a term is not included in the training set, but not 0
 def classify(test_message, training_set, prior = 0.5, c = 1.0e-4):

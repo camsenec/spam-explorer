@@ -4,7 +4,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import wordpunct_tokenize
 
 # add path to NLTK file
-nltk.data.path = ['nltk_data']
+nltk.data.path = ['classifier/nltk_data']
 # load stopwords
 stopwords = set(stopwords.words('english'))
 

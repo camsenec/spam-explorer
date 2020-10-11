@@ -1,4 +1,4 @@
-import utils
+from classifier import utils
 
 category_action = ["chat", "hyperlink", "money", "reply"]
 
