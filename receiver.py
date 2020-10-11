@@ -12,7 +12,10 @@ from email.mime.text import MIMEText
 from apiclient import errors
 import logging
 from docopt import docopt
-from gmail_credential import get_credential
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from credential.gmail_credential import get_credential
 
 logger = logging.getLogger(__name__)
 

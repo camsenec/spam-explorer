@@ -1,17 +1,3 @@
-"""
-Send E-Mail with GMail.
-
-Usage:
-  sendmail.py <sender> <to> <subject> <message_text_file_path>  [--attach_file_path=<file_path>] [--cc=<cc>]
-  sendmail.py -h | --help
-  sendmail.py --version
-
-Options:
-  -h --help     Show this screen.
-  --version     Show version.
-  --attach_file_path=<file_path>     Path of file attached to message.
-  --cc=<cc>     cc email address list(separated by ','). Default None.
-"""
 import pickle
 import os.path
 from googleapiclient.discovery import build
@@ -27,7 +13,7 @@ from pathlib import Path
 from email.mime.multipart import MIMEMultipart
 import mimetypes
 from apiclient import errors
-from gmail_credential import get_credential
+from credential.gmail_credential import get_credential
 from docopt import docopt
 import logging
 
