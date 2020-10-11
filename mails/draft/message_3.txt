@@ -1,8 +1,10 @@
 Hello,
 
+From Bowman.
+
 Thank you.
 
-Please fill in the form below.
+Please fill in the form below and reply to me.
 
 -----------------------------------------------
 Bank name:
@@ -11,4 +13,4 @@ Bank address:
 Account number:
 -----------------------------------------------
 
-Bowman,
+Bowman

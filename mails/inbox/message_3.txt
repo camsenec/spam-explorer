@@ -1,0 +1,106 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:418e:0:0:0:0:0 with SMTP id x136csp5881116ooa;
+        Sun, 11 Oct 2020 13:26:07 -0700 (PDT)
+X-Received: by 2002:a7b:c04a:: with SMTP id u10mr8329352wmc.83.1602447967667;
+        Sun, 11 Oct 2020 13:26:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1602447967; cv=none;
+        d=google.com; s=arc-20160816;
+        b=COyB40FPGhInsxfDSZcrQndV2oACW83oa/khuOt7z5W8HXWCGkC8qmJBsaSQjSpgrg
+         2FFuql/zeP2h0DgucEVQyFl8znhBn75syj34WP2QF2AMMrxWAf6s8kmPNDNOH/g3cVuG
+         hcfpqlylgLGDHdfSOdJXcFxaYUgbPYUtTXgZ4vLfBu0o815tLl2vY0NsC4aac5biHL/Y
+         g38ZmReXZLb4DHuhUaenaKJiEZb8DLbRdMvoicw63HbzdpCbueW70fn6tuaEULOnn+Rk
+         kQdVCHgN7OwdtKhg3vX5IbRTo3WddYpIL5YW8sLqnZCeAa1ajW8l0wk535NQ1WDEF3ZB
+         PuSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=0hdqD+aSO5zw3cZ1xOJm4MpUV35m97tunmDslIcY77I=;
+        b=cgJB9baRhaQpXAP3jjVdqFDovrrdE336IdOpCGImT90L1gKXQsw4wFJ6SdTyM6uRU3
+         sVz7BNgNWltVK3BxXhjVbhapUIYCMKvQec307wLE3v+7/+R3puJDbxgpBdv1jrk7sa2p
+         OhqhUUMJekkohHshJ7dQOZBRe/rWjHUmXahbiitvgFBjvbNiapZS0OYwooPF13N5edz1
+         yxVEDlkGmATNn6Rc8z/YLoAhJFsEvfXS8DuC6OfFhu/0tMyXuSYjch2B2OJBtdVDxnOJ
+         SlGqtTkf8Pu8iz9HcCgHvrxA6zq2B6bwLfXNFGWkPcGOovsK71d+N5Rw+u75nhNJ5BLx
+         BxzA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=MOU5QZgc;
+       spf=pass (google.com: domain of rudolphan2221@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rudolphan2221@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <rudolphan2221@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id r13sor8416844wrx.17.2020.10.11.13.26.07
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Sun, 11 Oct 2020 13:26:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rudolphan2221@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=MOU5QZgc;
+       spf=pass (google.com: domain of rudolphan2221@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rudolphan2221@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=0hdqD+aSO5zw3cZ1xOJm4MpUV35m97tunmDslIcY77I=;
+        b=MOU5QZgcaXsf6/UOW3JT6lB8bYeSJJ+VjO5sNGqGM39O49gbybqoVJDYmKAlEG42hH
+         MAh8TCqWt5xab+teX4d8gfpflDUW5VB1/LwDtmKY2Oze9UJeX4rvUA4rOndE4g/qVt/e
+         5QZF90R0NTuBGGkayIfhFeIM2BE6t4D3w/Qk7kz/sdFG/zd3qq7DUwYM5OkOQUl6ePhp
+         r1b5kq29M0FYNI/L/SE+DHn8C3LPgT4VO93n+0aFFTz+27NvjqJlK/SCejQu2BPFWxLx
+         upzmMOk+G8GYgYFIr0S8ZcWBgKWqDid55URECpvDlsRSaoiTJkxTIcrYAUuW0JzM0XPB
+         zBwQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=0hdqD+aSO5zw3cZ1xOJm4MpUV35m97tunmDslIcY77I=;
+        b=pU+Jo/Yzrq68WbveBtUzxG/Lf3JPArM1SqWEXIyAkZf/WyXCe6BHcBFoVcamH5ONTB
+         nf2JOb2rZzefOJrIk7r1vq4y2pQKvO3BDKoGGYQW5rQgvfnmbBV1ZVtxh9DyCBwkAMYz
+         2Twig4V/W1tlkGjKprxuggeXKQLVRe1tcn2Mc8A7C4OLSXSl6hEf1o4q/5TECiHA+GK4
+         hi+a/7Tb+bm/PPhFS1Fx7AnSNLkexOBcbsJLtub14ybQYximz5fMWc/Ac2lqElIzbIcI
+         3HwJZaqRBG2SQilky0kNkgFMMvpCqe6h6cGBzGuSH/NFKqAK0nH6IAYNZBCGKjBxekks
+         Z5sw==
+X-Gm-Message-State: AOAM533Z+20Mg4+P26+K97EJrLOGRBYt0M+yLxZi3oX0fTIT6X7Ud9Ga
+	6MOl6KdnYnpF79hnMGWhtH07sZ6mnzBre9TeIy0Ce4iLmUc4Yg==
+X-Google-Smtp-Source: ABdhPJygoQirFMcfuUAGi5pOiKBPjVR3CFQ2xyY0z/TEqtPsMPlFOlXoDzo3trHf964TsiSq308wHr4YfMbaCoV/CnU=
+X-Received: by 2002:adf:fd82:: with SMTP id d2mr26451481wrr.304.1602447967220;
+ Sun, 11 Oct 2020 13:26:07 -0700 (PDT)
+Received: from 1039323562633 named unknown by gmailapi.google.com with
+ HTTPREST; Sun, 11 Oct 2020 13:26:06 -0700
+MIME-Version: 1.0
+from: rudolphan2221@gmail.com
+Date: Sun, 11 Oct 2020 13:26:06 -0700
+Message-ID: <CADyTQqxFqUVSQgxvPadxEEYouxN0zKOWWD4pxQzd5mTDFT8QOA@mail.gmail.com>
+Subject: test
+To: deepsky2221@gmail.com
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+From Bowman.
+
+Thank you.
+
+Please fill in the form below and reply to me.
+
+-----------------------------------------------
+Bank name:
+Bank branch name:
+Bank address:
+Account number:
+-----------------------------------------------
+
+Bowman
+
+
+Hello,
+
+From Bowman.
+
+Thank you.
+
+Please fill in the form below and reply to me.
+
+-----------------------------------------------
+Bank name:
+Bank branch name:
+Bank address:
+Account number:
+-----------------------------------------------
+
+Bowman

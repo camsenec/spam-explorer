@@ -1,11 +1,17 @@
 from classifier import utils
 from monkeylearn import MonkeyLearn
+import constants
+import re
 
 def extract_scammer_name(message):
     ml = MonkeyLearn('d31c9827434f85201fc8ba34de9fa26a2ff91936')
+    message = re.sub('\n', '', message)
+    message = re.sub('\r', '', message)
+    print(message)
     data = [message]
     model_id = 'ex_SmwSdZ3C'
     result = ml.extractors.extract(model_id, data)
+    print(result.body)
     scammer_name = result.body[0]["extractions"][0]["parsed_value"]
     return scammer_name
 
@@ -15,7 +21,7 @@ def reply(inserted, reply_number):
         text += "Hi! %(scammer_name)s\n" % inserted
         text += "Thank you for contacting me.\n"
         text += "My name is %(myname)s.\n" % inserted
-        text += "Please tell me more detailed infromation\n"
+        text += "Please tell me more detailed information\n"
         text += "Sincerely Yours,\n\n"
         text += "--------------------------------------------------\n"
         text += "%(myname)s\n\n" % inserted
@@ -47,15 +53,20 @@ def reply(inserted, reply_number):
 def generate_mail(message, category_tag_list, reply_number):
     if category_tag_list["reply"] == True:
         inserted = {}
-        scammer_name = extract_scammer_name(message)
-        inserted["scammer_name"] = scammer_name
         inserted["myname"] = "Morris Briggs"
+        if reply_number == 1:
+            scammer_name = extract_scammer_name(message)
+            inserted["scammer_name"] = scammer_name
+            constants.scammer_name = scammer_name
+        else:
+            inserted["scammer_name"] = constants.scammer_name
+
         reply_text = reply(inserted, reply_number)
+        return reply_text
     elif category_tag_list["chat"] == True or category_tag_list["hyperlink"] == True or category_tag_list["money"] == True:
         pass
     else:
         pass
-    return reply_text
 
 if __name__ == '__main__':
     message = "Complements of the day,\nI am Bowman, I am Professional Lawyer, I have something important Urgently to discuss with you concerning your late Japanese family,\nWaiting for your respond to proceed,\n\nBowman,"

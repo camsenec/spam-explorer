@@ -1,4 +1,5 @@
 from classifier import classifier, trainer, utils, categorizer
+import mail_generator
 import sender, receiver
 from os import listdir
 from os.path import isfile, join
@@ -93,13 +94,14 @@ if __name__=='__main__':
         print("SPAM or HAM", result)
         if result == "HAM":
             break
-        category_tag_list = categorizecategorize(message_save_file_path)
+        category_tag_list = categorizer.categorize(message_save_file_path)
 
         #generate reply mail
-        reply_text = generate_mail(message_body, category_tag_list, reply_number)
+        reply_text = mail_generator.generate_mail(message_body, category_tag_list, communication_num)
         message_reply_file_path = "mails/draft/reply_" + str(communication_num) + ".txt"
         with open(message_reply_file_path, mode = "w") as f:
             f.write(reply_text)
 
         #spam_receiver -> spam_sender
         send_routine(spam_receiver, spam_sender, subject, message_reply_file_path, "receiver")
+        time.sleep(5)
