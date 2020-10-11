@@ -2,19 +2,7 @@ from classifier import utils
 
 category_action = ["chat", "hyperlink", "money", "reply"]
 
-def categorize_action(test_message):
-    msg_terms = utils.get_words(test_message)
-    flags = dict()
-
-    for category in category_action:
-        flags[category] = False
-
-    for term in msg_terms:
-        flags[__judge_action(term)] = True
-
-    return flags
-
-def __judge_action(term):
+def judge(term):
     if term == "talk" or term == "chat" or term == "LINE":
         return category_action[0]
     elif term == "link" or term == "http" or term == "https":
@@ -25,3 +13,16 @@ def __judge_action(term):
         return category_action[3]
     else:
         return None
+
+def categorize(spam_file_path):
+    message = utils.get_mail_from_file(spam_file_path)
+    msg_terms = utils.get_words(message)
+    flags = dict()
+
+    for category in category_action:
+        flags[category] = False
+
+    for term in msg_terms:
+        flags[judge(term)] = True
+
+    return flags

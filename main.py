@@ -62,10 +62,11 @@ def send_routine(mail_sender, mail_receiver, subject, message_text_file_path, ro
 
 def receive_routine(spam_sender, message_file_path):
     query="from:"+spam_sender
-    receiver.main(
+    message_body = receiver.main(
         query=query,
         message_file_path=message_file_path,
     )
+    return message_body
 
 
 if __name__=='__main__':
@@ -77,18 +78,28 @@ if __name__=='__main__':
     spam_receiver = args[2]
     subject = args[3]
 
-    for communication_num in range(1,2):
+    for communication_num in range(1,4):
         #spam_sender -> spam_receiver
         message_text_file_path = "mails/draft/message_" + str(communication_num) + ".txt"
         send_routine(spam_sender, spam_receiver, subject, message_text_file_path, "sender")
         time.sleep(5)
 
         #check mail from gmail box[by spam_receiver]
-        message_file_path = "mails/inbox/message_" + str(communication_num) + ".txt"
-        receive_routine(spam_sender, message_file_path)
-        result = classify(message_file_path, spam_training_set, ham_training_set)
-        print(result)
+        message_save_file_path = "mails/inbox/message_" + str(communication_num) + ".txt"
+        message_body = receive_routine(spam_sender, message_save_file_path)
+
+        #classify(spam or ham) and categorize (induce chat/money/hyperlink/reply)
+        result = classify(message_save_file_path, spam_training_set, ham_training_set)
+        print("SPAM or HAM", result)
+        if result == "HAM":
+            break
+        category_tag_list = categorizecategorize(message_save_file_path)
+
+        #generate reply mail
+        reply_text = generate_mail(message_body, category_tag_list, reply_number)
+        message_reply_file_path = "mails/draft/reply_" + str(communication_num) + ".txt"
+        with open(message_reply_file_path, mode = "w") as f:
+            f.write(reply_text)
 
         #spam_receiver -> spam_sender
-        message_text_file_path = "mails/draft/test.txt"
-        send_routine(spam_receiver, spam_sender, subject, message_text_file_path, "receiver")
+        send_routine(spam_receiver, spam_sender, subject, message_reply_file_path, "receiver")

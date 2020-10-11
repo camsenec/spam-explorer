@@ -80,6 +80,8 @@ def main(query, message_file_path):
     with open(message_file_path, mode="w") as f:
         f.write(raw_message + '\n\n' + message_body)
 
+    return message_body
+
 
 if __name__ == "__main__":
     args = sys.argv

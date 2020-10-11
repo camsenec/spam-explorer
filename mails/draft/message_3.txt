@@ -1,0 +1,14 @@
+Hello,
+
+Thank you.
+
+Please fill in the form below.
+
+-----------------------------------------------
+Bank name:
+Bank branch name:
+Bank address:
+Account number:
+-----------------------------------------------
+
+Bowman,
