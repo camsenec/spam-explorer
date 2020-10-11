@@ -87,7 +87,7 @@ def list_message(service, user_id, query, label_ids=[], count=3):
 
 
 def main(query="is:unread", tag='SPAM', count=3):
-    creds = get_credential()
+    creds = get_credential(role="receiver")
     service = build("gmail", "v1", credentials=creds, cache_discovery=False)
     # get list of labels
     labels = list_labels(service, "me")
