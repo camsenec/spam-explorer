@@ -32,13 +32,13 @@ def decode_base64url_data(data):
     return decoded_message
 
 
-def list_message(service, user_id, query, label_ids=[], count=3):
+def list_message(service, user_id, query, count=3):
     messages = {}
     try:
         message_ids = (
             service.users()
             .messages()
-            .list(userId=user_id, maxResults=count, q=query, labelIds=label_ids, includeSpamTrash=True)
+            .list(userId=user_id, maxResults=count, q=query, includeSpamTrash=True)
             .execute()
         )
 
@@ -86,13 +86,15 @@ def list_message(service, user_id, query, label_ids=[], count=3):
         print("An error occurred: %s" % error)
 
 
-def main(query="is:unread", tag='SPAM', count=3):
+def main(query, tag=None, count=3):
     creds = get_credential(role="receiver")
     service = build("gmail", "v1", credentials=creds, cache_discovery=False)
     # get list of labels
     labels = list_labels(service, "me")
-    target_label_ids = [label["id"] for label in labels if label["name"] == tag]
-    messages = list_message(service, "me", query, target_label_ids, count=count)
+    #target_label_ids = [label["id"] for label in labels if label["name"] == tag]
+    #messages = list_message(service, "me", query, target_label_ids, count=count)
+    print(query)
+    messages = list_message(service, "me", query, count=count)
     if messages:
         return json.dumps(messages, ensure_ascii=False, indent=4, separators=(',', ': '))
     else:
@@ -100,5 +102,8 @@ def main(query="is:unread", tag='SPAM', count=3):
 
 
 if __name__ == "__main__":
-    messages_ = main(query="is:unread", tag='SPAM', count=3)
+    args = sys.argv
+    send_from = args[1]
+    query="from:"+send_from
+    messages_ = main(query=query, tag='SPAM', count=3)
     print(messages_)

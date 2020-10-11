@@ -21,7 +21,7 @@ def __judge_action(term):
         return category_action[1]
     elif term == "money" or term == "coin":
         return category_action[2]
-    elif term == "reply":
+    elif term == "reply" or term == "respond":
         return category_action[3]
     else:
         return None
