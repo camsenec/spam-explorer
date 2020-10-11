@@ -1,0 +1,85 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:3e07:0:0:0:0:0 with SMTP id t7csp885740oot;
+        Thu, 24 Sep 2020 18:57:21 -0700 (PDT)
+X-Received: by 2002:a17:907:4037:: with SMTP id nk7mr518055ejb.84.1600999041769;
+        Thu, 24 Sep 2020 18:57:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600999041; cv=none;
+        d=google.com; s=arc-20160816;
+        b=W7neeZIHZDf4NKU3nSTSk+9taAMNNigOIuQ+dEZ8DbXBxGSj2VKGcswbOPn+8CssLK
+         iYWJuNDmofkTrSVeT+MR7o6bILEprNV2Ak8rjolbl9Ql2Xz6RPa/4YPDq2CINGAIWW8s
+         smM6p8Lw1DHJa8VCSzXef+pyTaVBiFjE8S8IHIs830+r+TVpBzCIFXaurAKqpTf339+D
+         ip5TsCXQ041lmiGlnHNqQ172qVFfZecGZPcwBzCSCdOK/RyxIrYyUt5rlaGV2ueCZP9f
+         D+iZSnGIcKpy8wJJWQKeYyL0eP+X7+OnzyRAU98l8NS6BKfkc5msm2P5vUKkI/y2VphK
+         FhQw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=dY1fu58Ip7vo2VPJ2PSoCwglSP2x21S7n3tNfV84U0g=;
+        b=d27vpJ60JUs+/N9scej/gsp1Dx7SuhqJhzK41TpzzTmMXvvHIxyeyJ/ZMgsavVrw0Z
+         xSfrV6g0oUYumbAf1My/xIgRwC1NXMKWzTNtLvjf+/WY6IRIQgwxsPr5201t6qSvBj68
+         MH0Cfhcvy677OI73oeVD7fbFl4QxV4sBJnK1x7W2OITO8DUKqJ4NnWIwaSOcCPTq049+
+         I/1JHMxauIJKrP1LSESqOJMZVW/HB9zOKvGlQlyGoW8l/GlS63lKY3kdRnvkSGvvGbrP
+         DUT52iV8B4UyOtloCjYi5YIuPyWxauMotrfJZ9a+QphqsatOGdrJugLWCn2kq5qfyFdQ
+         ZF6w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=kZL5dZt3;
+       spf=pass (google.com: domain of na844v@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=na844v@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <na844v@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id ak12sor501317ejc.9.2020.09.24.18.57.21
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Thu, 24 Sep 2020 18:57:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of na844v@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=kZL5dZt3;
+       spf=pass (google.com: domain of na844v@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=na844v@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=dY1fu58Ip7vo2VPJ2PSoCwglSP2x21S7n3tNfV84U0g=;
+        b=kZL5dZt3M9Ffa/aWJlwuLoMrOW20OyiafNukBZeZrwuD+JKiF4S/aIA0zvGJbzPLg+
+         IOl3KJYanRfCb5Wl0YI5MDMIwTVl8svqZNkAGKdbE3885a7eRCaIYUf2gwUpw9qYwVNY
+         tNG0Wpqt7kGWYofwmyNA2RSRyUgKyhnd3WntQQrnyTLbaJcSYhfngX8rvX+U8e674nuc
+         JwT2EXpvfiNj0N+h+zXK84LfSwlgIXSo1K4tZgheZhgemch3sTSTzGvruhMcQ4auU3TG
+         B5bNNHJDll32HvxoVvnFlhiWEVB/R+/JfawODL6nVixmbAMgYGzAbcWZnGVDYWs2EfIw
+         SfwQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=dY1fu58Ip7vo2VPJ2PSoCwglSP2x21S7n3tNfV84U0g=;
+        b=t8kahVhVMC5KCAaDH1QQJukCHyo31Dm1z0Spju3n4DQadzbU5UABANwoK5ng6HuBkg
+         EYlN8dtSjagZHLoVa/t+ILt/egLGK50kTGmvBFtbqqteeQuMTQtrnA37bEI7lmGmhWBV
+         57090vw9/ekLFeyrXkkrvyxVp9m+oJ+G56Br/5jyFiauYn1bmbA6V1MWBpFnDmDZEAcC
+         j1SFK7WHWvDFhSF4IVypEbWG3NxmO4YfwtUVpp7Zn34rwRUuNs+lkooWBS+U1dgccace
+         o6PdoSOoeCtQkt7QDa4U05M+QtAFEC+01GcQSX+LOMzLgxo3QQY45kNNfPyUmJivzLyT
+         199g==
+X-Gm-Message-State: AOAM5319MqSsDpraChzjpTAcq9DBLXyLlls1DP2ePAto5ORxXx4vhXt3
+	dh6exyv4knlq6zBdUQ26w1LRvM9AKJlgYgnKnLs=
+X-Google-Smtp-Source: ABdhPJxyLNwiQB8gol+DLUnDGcnN48yiqbsN1NUTZCe6Sf0Fv4TKW1/vx1Ryg8NCFHp7GXs/G4GZ5LgST0cuvWAqnmc=
+X-Received: by 2002:a17:906:fb8c:: with SMTP id lr12mr520007ejb.9.1600999041376;
+ Thu, 24 Sep 2020 18:57:21 -0700 (PDT)
+MIME-Version: 1.0
+From: Gmail <na844v@gmail.com>
+Date: Fri, 25 Sep 2020 10:57:12 +0900
+Message-ID: <CAAEazoq8MJocU5PG1t_EHS_RZCZ1+WJuU+0xCicE5RhqqsPtYg@mail.gmail.com>
+Subject: =?UTF-8?B?44GT44KT44Gr44Gh44Gv772e?=
+To: info_to_7556@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000025a8d605b019a3af"
+Bcc: deepsky2221@gmail.com
+
+--00000000000025a8d605b019a3af
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+
+Hello over Isuzu (ω`) /
+I received a message from LINE about the matching campaign, so I sent a message (. ・ Ω ・.)
+I think it's something to do, so why don't you LINE if you like?
+I will send you an ID, so please add a friend ♡
+The icon is a white cat (laughs)
+If you don't add @, you can't find it even if you search, so please be careful | ω ・ ｀ o) ﾉ ”
+
+▼ Mayu's LINE ID ▼
+@mayuu

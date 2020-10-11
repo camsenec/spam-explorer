@@ -1,0 +1,55 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:655d:0:0:0:0:0 with SMTP id z29csp2940971oog;
+        Sun, 20 Sep 2020 06:28:45 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxfsKtqsrkI97yYj6dSefx4ftVbnZxOnQW3aXwW5LTZCO/uI+mDEWAxDtkqR2FycKJu0T18
+X-Received: by 2002:a1c:7714:: with SMTP id t20mr26455222wmi.55.1600608525193;
+        Sun, 20 Sep 2020 06:28:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600608525; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IVM+CtVuDAHN6asHgJ1aF12HYsSj7FYCu6GToqSmWQKhDcfggtYR6X2TbpJcpTbYgH
+         DahvkwnyEZusB467k9JpODx61VdBHISXn+9tveksRbX8Z/U1salaOONvEFIeiXiKpNWk
+         wSodgXmsFEZ73gmcLzLqc8XlEP82jO6Qv9F71/w+XtgTEqBg56QdbvDundidHlcr3pwi
+         NaiYYK2qSvP+zkl9ETVjKscEVpxbOjm+pfFL8MX5mSBd7IZ0xVvtZu4BFcgI44F1PYLr
+         jPyAaKAxBjagN8UDamjyuoVf8Z9KLbcUQgEmVNVzJ8DLa9iWLINZqD4Z6WFcIKYMZQvj
+         a1WQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:message-id:from:subject:to
+         :date;
+        bh=NLGP7Vw8J0n9H3OaaCbQ9xjPgFBe5XXG1rfXHKDHLuo=;
+        b=NP+ksCIA3gZji7UjQOfpngyR4CEHD0Dpp8ECjthZAz01H+EPh40yzss8TdHxOz8IBg
+         JHz1jap15loA7thosltlZw++bXz/ch6rQRacFbOWs0ib8CfLNSHMfcDGR3YqYfnOYL2w
+         3edz5atFFSJ70gAevfrn3d9di8lGKlvZ/3WIJ7U/V5VPmuxGKKxjyF43rD0Gm4bVOoZd
+         rMy//FJxHQO0dYdHGGxHs/jdYuA0NcGYSrSG0yESQMkO6oe5a+pEX8WvVHs2ClFtI75v
+         QzXh8tLV/Zu09OUl4+svA4RUN96fay/Tdj84pNJUt+8BtvBmI+vQYY6KU9RfZ9NQpgvR
+         /uOg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return@wv6kexannq.com designates 3.250.13.242 as permitted sender) smtp.mailfrom=return@wv6kexannq.com
+Return-Path: <return@wv6kexannq.com>
+Received: from ec2-3-250-13-242.eu-west-1.compute.amazonaws.com (ec2-3-250-13-242.eu-west-1.compute.amazonaws.com. [3.250.13.242])
+        by mx.google.com with ESMTPS id t18si9017229wrs.281.2020.09.20.06.28.45
+        for <deepsky2221@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 20 Sep 2020 06:28:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return@wv6kexannq.com designates 3.250.13.242 as permitted sender) client-ip=3.250.13.242;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return@wv6kexannq.com designates 3.250.13.242 as permitted sender) smtp.mailfrom=return@wv6kexannq.com
+Date: Sun, 20 Sep 2020 22:15:32 +0900 (JST)
+To: =?iso-2022-jp?B?GyRCJTIlOSVITU0bKEI=?= <deepsky2221@gmail.com>
+Subject: =?ISO-2022-JP?B?LC4bJEI+LkB0MD07Uk1NJGgkahsoQl8zaTY1aTI=?=
+From: =?iso-2022-jp?B?GyRCPi5AdDA9O1IbKEI=?= <return@wv6kexannq.com>
+Message-ID: <2020092001153262091551563l04D.1@qa2gawo3y3.vvmh3mi0je.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+
+New message
+"You know the story of unknown diseases that are happening all over the world right now. 』\
+↓ Click here for the text ↓
+http://wv6kexannq.com/pc/member/sendMail.php?direct_user_cd=17925392&direct_password=3652&M_MAIL_SEQ=61981966
+
+
+
+
+Conducted an awareness survey of people who started playing musical instruments within a year About 50% answered that they were able to eliminate overlooking online TV by playing musical instruments.
+"Singo" is a robot speaker that automatically analyzes music and dances in combination with more than 130 types of movements according to the tone of the song. You can also customize the dance with the dedicated app.

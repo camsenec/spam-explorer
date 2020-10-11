@@ -1,0 +1,86 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:655d:0:0:0:0:0 with SMTP id z29csp1747225oog;
+        Sat, 12 Sep 2020 05:45:30 -0700 (PDT)
+X-Received: by 2002:a37:e01:: with SMTP id 1mr5451453qko.128.1599914729967;
+        Sat, 12 Sep 2020 05:45:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1599914729; cv=none;
+        d=google.com; s=arc-20160816;
+        b=mQQqb3hUB8IU9gMjVqz8bl20yYYQTCiQwXq9Atw5KgMaE7tKXH5ZY/dymJADeKIaQa
+         +e9Ql1OESl/4GngYikcj9+AP8VuayAIFf80255Wh5Xw4RIhjobpIqWL2ltMEkgWyZ6QD
+         btMSd4cndpPkr9RVo1ct3ofLkGmaLiws6mAqhymcMWICgSjTITWXize5iQq9wPjU1LSd
+         alsfv8lM3mJZycNgYqhSWzmH+IMO3kiJSanQXrD+Qo3ByXaXql4h9DxId3imCPUU3DpI
+         vuFKcYKf6PzpXuH2yccT83GwefjhR3I10u6N8anhjn6SscMilFv2qixYguTXUJF01MK4
+         e8qw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=b8zWhboxo3lkGUfhJfVlsTNFqiRuA94b+aPfNF+jroM=;
+        b=XGXvmPHb2Q+tXrxRZfF1VDwRuIZlWCvUTWAoixWt+4u/sf2Q6+eYtrsjQINkAtzjFC
+         PyMwQtplZvPPnqtGDdOND9H4WeJDKIfSOA0TNgEpEGYAr6sYa07pI6yfz0Ot5onhkFQF
+         5fMRqZaTMJV8ZMk5YMh/HE/gyIk7LRqIvq0cC3xN4uaUSFiW1xqyvlxORHNxtlndMhtj
+         dVe9aniENKw/x9RGXD0+lTt7aej7N2G/aZO4AiE+troIvdU2M+fEmve5b8SkBxJzkxGu
+         DtQTa9oM2/dsCwVpbkPV9f/64EBGfV42j7lZkunemIXEuUXmwr1PziY7IMtxMiAPMyf1
+         rtUg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=H8hWL1BC;
+       spf=pass (google.com: domain of kourayawouz@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=kourayawouz@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <kourayawouz@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id k16sor1908385qkj.21.2020.09.12.05.45.29
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Sat, 12 Sep 2020 05:45:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kourayawouz@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=H8hWL1BC;
+       spf=pass (google.com: domain of kourayawouz@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=kourayawouz@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:reply-to:from:date:message-id:subject:to;
+        bh=b8zWhboxo3lkGUfhJfVlsTNFqiRuA94b+aPfNF+jroM=;
+        b=H8hWL1BCUkVT4tazON2dNtT6SfmdnJ8zRsMk68zSyQ8D/+0oxpQRNP4TuPIaKWOKyI
+         bxPOUqjkeb0W3LYGGxU8AOHFF6fdCrT2AlKmFVSGzwvJARTgPWY5fuTVTpWxTvilM95P
+         amdur5dnNOTjBmZF/uZSQM7v8K3i/kg4RlKZ1Nu+jlM/HSzuP/OdJztWz0TifdUO8vSM
+         sbjg39+vsU1UwX+G2suGmseR8LemMOU8Bn3gdSmSWgJCtF+GTm/65a+zRVPrZTDJjnt6
+         ME43/uXbH9aw+27UFyz3Qgi2e58gwdpGwHL8Jn9VwoOfZkbaoG7YhtkNr/3jrOjuBOYU
+         UdyA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+         :subject:to;
+        bh=b8zWhboxo3lkGUfhJfVlsTNFqiRuA94b+aPfNF+jroM=;
+        b=NU/byhA5yRi+xvD+LhRk0zQMKmUZ2FIsveDbYbmAiPp677uFdhVqM9HUjRyxN+g+j9
+         lDvCX3R8TcuygdQdbHO8i5RU0AUma25OK8f42AQ2KQrjA83p68l4Q+vlevg4z2ket4VS
+         O/dmJygcW3H9rKFLGPWtHmI/1a8kxKTDUHYkD0s423X1sGVWeAGHhFZX7RikXfR+4Gf2
+         HxqxkmUjjyh3TaZmkG3xPknKztOEsAjqrGlTTN6jAl+5FLBtyOS3yz9afu62gS+I1MZZ
+         l3Bb/VHvK9C37192LMa/yTR0ct5LLIly5DRZTwQyIIy2O6MsZKTf7HjmjdHLAW9P3LYu
+         KtAA==
+X-Gm-Message-State: AOAM533C5NQMDH6gjVCCIXG7Ni9aqQC7Kt4mdGZTAc3Wp8vBD0M5NE88
+	YsKyJi3YLnlNe+qlIHfYgBUZ+QcPkBUYDBDhrVA=
+X-Google-Smtp-Source: ABdhPJwXKgHIaHdS6zWj6wCH2ymcGU92eSP0h73Or2QlDhMGl+sPqdV8P/IXd7dEye91PcEqgiibSqVRnPPhETZne0w=
+X-Received: by 2002:a37:9c55:: with SMTP id f82mr5478406qke.123.1599914729577;
+ Sat, 12 Sep 2020 05:45:29 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: godwinidowu0002222@gmail.com
+From: Godwin Idowu <godwinidowu0002222@gmail.com>
+Date: Sat, 12 Sep 2020 12:45:19 +0000
+Message-ID: <CAFS=bKX95=U+7vhCm6U+zXnzJQmrqovSjjTj7wxTUkS42xsp3A@mail.gmail.com>
+Subject: Complements of the day,
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="00000000000020a36605af1d2dda"
+Bcc: deepsky2221@gmail.com
+
+--00000000000020a36605af1d2dda
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+Complements of the day,
+
+I am Bowman, I am Professional Lawyer, I have something important Urgently to discuss with you concerning your late Japanese family,
+
+Waiting for your respond to proceed,
+
+Bowman,

@@ -1,0 +1,81 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:655d:0:0:0:0:0 with SMTP id z29csp1186944oog;
+        Fri, 18 Sep 2020 01:47:33 -0700 (PDT)
+X-Received: by 2002:a17:906:aac7:: with SMTP id kt7mr34898507ejb.548.1600418853386;
+        Fri, 18 Sep 2020 01:47:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600418853; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XOke09JWk3Mxnw77C+Wt29Dsp782GnkuVO+0TjlezYjbo1wJJ0IEHJGH/N6e/JcqL8
+         XeV9Y7qvru82oF9GfWam8RNjzMXxVY0pCTHbBOpHI5q5/49889+CjAgCrDsGRb9i7303
+         Psqt6XYcy6e+p9A3w7sC835a8lhBBHGhWtaqF0pqWg49SVoSabIj6OEnT3GhCldKMToX
+         yqFnDPig5dOpan6/mQ/dVc0UPfIE0JlgAsf0BnD60bKJFl3Mx1sHsIY5D2mVC+7cDFNp
+         gCIKx/3MJRwsFtIIBoTSkDjCyDvoTBFfGtp7CneEDcCok5hx/I2X95xNmFFZ5CwNlDJo
+         NQSA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=pMeI54QYnwADIOIrBUgjEnQo2DZooalmnj6UXSIJmnQ=;
+        b=0BH2gKQJ9YCAOAyTU0akDDU0LN9ZPgkobARrhNfnaShKkGKJHmdtd/98hKhcrsYG88
+         39MLWUjKI2hZ5837KtOnAceetTf2q+Iqvnzl1dv7PbLaou4m1/VxjriOCpdXmJC+cvKc
+         7DND3Kj5xRuLFuqNCH1T9HZlSeiweJNVc5VDKGRgBc5JU+1h9ERhdm3ucMY8g/o95mw4
+         hf+f1bj1FwViTogImbzvIYRT5Oa9QgzQvnqRglomSUs1yFxSQEVMEp8BXYTtaiB3XFu9
+         oOs2401cDpxoljMTuhcD0knYLWa9vFw8c93adHkdtCgSpm12xPgQhevITyj+0OUrpFUL
+         Zduw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=BmfZdopf;
+       spf=pass (google.com: domain of bdhcgafy@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=bdhcgafy@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <bdhcgafy@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id x21sor1365324ejj.21.2020.09.18.01.47.33
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Fri, 18 Sep 2020 01:47:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bdhcgafy@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=BmfZdopf;
+       spf=pass (google.com: domain of bdhcgafy@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=bdhcgafy@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=pMeI54QYnwADIOIrBUgjEnQo2DZooalmnj6UXSIJmnQ=;
+        b=BmfZdopfU/4PBywTvpoGkX37ledhEXslY6/kWIa3hshDIjFS8dZtP5CPdaiZRcTDd4
+         p1stSLsL0qcpeA3hqt7zefE3V3vzMvOHQMqB4AMZHoh5vxnWMduyzSFdUQVx+A8bWKfD
+         cqudwjx08BYB6LaeuAmOZ5qu61XfBTTX0mzfC3DBf0MRkEq7FcjhgjFXIRcQbw7kMQ3u
+         WXl3NXLU/WbgW0vaY2LpN3mfb/d+VDdTXRZWfhPu4yMbpUsUuSC9yj2qsyhLBW3Vriko
+         NKcd74ckx1OiEw0OH/23qlvAtGNfYI3xwSdBUB8c5f0RIysSjHz/a2Yuk0zmjmphtEcO
+         6aRw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=pMeI54QYnwADIOIrBUgjEnQo2DZooalmnj6UXSIJmnQ=;
+        b=le4JaHUKehIaES6dpytV/hYwk+ItqKabgYSKbqV6mEygksiQImnB5dD8NQqI/9eFYm
+         N5NY8junq0YGAev0iJ5OCUR5V4LxSHnj/PGfi5W6RboZu25MDW9oSUGzDqIKCwd5X5dF
+         9pMIAcxt1Ap+PlaofLAPmJWgqD10vjaRHkFqJBjYqQe4YH0DBLoeKrlYGxeSXRRxTbcF
+         Y/vweT2TjCmOl/Dz43qyyTKzO/dmTHOmZ+gqNHWhfFjXYyfkStcgcqpLHotiQ3jW76AT
+         SNjSspT1HOQiHjezhK/9rP6v5HCOqgZYe5C1NS991Z6aMwii+kyMvt5ObvVXvUXNwJ5B
+         TD8g==
+X-Gm-Message-State: AOAM531YEnPqaGrVF0uLX/ztwApT9VIvI+3amRST5Stecyj9DNA7bx+q
+	L5yniBufREsTBDh/R1s2w09kzRWdd1nZ+IoVl0c=
+X-Google-Smtp-Source: ABdhPJxdg0IFnVenm10BXNNAjIZ6uh52esphOOL/XfahjwcqhrMUWzZ3ctRZZ+xe7vRjicSfah0miLl9fSRIiUlhq+0=
+X-Received: by 2002:a17:906:8246:: with SMTP id f6mr22541395ejx.296.1600418852642;
+ Fri, 18 Sep 2020 01:47:32 -0700 (PDT)
+MIME-Version: 1.0
+From: mail <bdhcgafy@gmail.com>
+Date: Fri, 18 Sep 2020 17:47:21 +0900
+Message-ID: <CADbeSNjwqwErkk7p5CHs=rzsKgVD2MsxS2nKAzbNLP76BMpa8Q@mail.gmail.com>
+Subject: =?UTF-8?B?44Gy44Gq44GT44Gn44GZKO+9oeODu8+J44O7772hKUxJTkXpgIHjgorjgb7jgZnjga0=?=
+	=?UTF-8?B?77yB?=
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="0000000000003435ac05af928de8"
+Bcc: deepsky2221@gmail.com
+
+--0000000000003435ac05af928de8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+Since it is a matching support service, it seems that it was connected, so I sent a message ♪
+I'll send you a LINE ID, so I'd be happy if you could add a friend o (；> △ <) o
+
+▼ LINE ID ▼
+@hinakom

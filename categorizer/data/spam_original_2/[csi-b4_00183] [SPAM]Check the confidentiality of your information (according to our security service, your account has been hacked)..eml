@@ -1,0 +1,104 @@
+Return-Path: <csi-b4-admin@edu.kobe-u.ac.jp>
+X-Original-To: b4@fine.cs.kobe-u.ac.jp
+Delivered-To: tomo-tanaka@fine.cs.kobe-u.ac.jp
+Received: from mailgw.kobe-u.ac.jp (mailgw.kobe-u.ac.jp [133.30.30.67])
+	by www.fine.cs.kobe-u.ac.jp (Postfix) with ESMTP id 9CDA520152
+	for <b4@fine.cs.kobe-u.ac.jp>; Tue, 25 Feb 2020 03:50:20 +0900 (JST)
+Received: from taka.center.kobe-u.ac.jp (taka.center.kobe-u.ac.jp [133.30.30.63])
+	by mailgw.kobe-u.ac.jp (Postfix) with ESMTP id 909F9200664AA;
+	Tue, 25 Feb 2020 03:50:20 +0900 (JST)
+Received: from [133.30.30.62] ([133.30.30.62])
+          by taka.center.kobe-u.ac.jp ([133.30.30.63])
+          with ESMTP id 1582570220.568189.3248487280.taka
+          for <>;
+          Tue, 25 Feb 2020 03:50:20 +0900 (JST)
+Received: from suigei.center.kobe-u.ac.jp (suigei.center.kobe-u.ac.jp [133.30.30.64])
+	by gassan.center.kobe-u.ac.jp (Postfix) with ESMTP id 5BF1F1000032D;
+	Tue, 25 Feb 2020 03:50:20 +0900 (JST)
+Received: from edu.kobe-u.ac.jp (suigei.novalocal [127.0.0.1])
+	by suigei.center.kobe-u.ac.jp (Postfix) with ESMTP id 1544F26CA2A;
+	Tue, 25 Feb 2020 03:50:20 +0900 (JST)
+Received: from mailgw.kobe-u.ac.jp (mailgw.kobe-u.ac.jp [133.30.30.67])
+	by suigei.center.kobe-u.ac.jp (Postfix) with ESMTP id CC11A16A30A
+	for <csi-b4@edu.kobe-u.ac.jp>; Tue, 25 Feb 2020 03:50:19 +0900 (JST)
+Received: from taka.center.kobe-u.ac.jp (taka.center.kobe-u.ac.jp [133.30.30.63])
+	by mailgw.kobe-u.ac.jp (Postfix) with ESMTP id BB1DE200664AA
+	for <csi-b4@edu.kobe-u.ac.jp>; Tue, 25 Feb 2020 03:50:19 +0900 (JST)
+Received: from [133.30.30.62] ([133.30.30.62])
+          by taka.center.kobe-u.ac.jp ([133.30.30.63])
+          with ESMTP id 1582570219.702708.3882875760.taka
+          for <csi-b4@edu.kobe-u.ac.jp>;
+          Tue, 25 Feb 2020 03:50:19 +0900 (JST)
+Received: from [90.169.214.48] (unknown [90.169.214.48])
+	by gassan.center.kobe-u.ac.jp (Postfix) with ESMTP id 30B171000032D
+	for <csi-b4@edu.kobe-u.ac.jp>; Tue, 25 Feb 2020 03:50:18 +0900 (JST)
+Date: 24 Feb 2020 19:20:13 +0000
+From: <charlie6d@buffy.tpgi.com.au>
+Reply-To: csi-b4@edu.kobe-u.ac.jp
+Subject: [csi-b4:00183] [SPAM]Check the confidentiality of your information (according to our security service, your account has been hacked).
+X-TERRACE-DUMMYSUBJECT: Terrace Spam system                                  *
+To: <csi-b4@edu.kobe-u.ac.jp>
+Message-Id: <5E5428F5.3515.AA222E@charlie6d.buffy.tpgi.com.au>
+X-ML-Name: csi-b4
+X-Mail-Count: 00183
+X-MLServer: fml [fml 4.0 STABLE (20040215/4.0.4_BETA)]; post only (anyone can post)
+X-ML-Info: If you have a question,
+	please contact csi-b4-admin@edu.kobe-u.ac.jp;
+	<mailto:csi-b4-admin@edu.kobe-u.ac.jp>
+X-Mailer: Pegasus Mail for Windows (4.41)
+X-Original-To: csi-b4@edu.kobe-u.ac.jp
+X-Greylist: delayed 66 seconds by postgrey-1.34 at gassan.novalocal; Tue, 25 Feb 2020 03:50:18 JST
+X-TER:
+Priority: normal
+X-TERRACE-SPAMMARK: NOT spam-marked.
+  (by Terrace)
+X-TERRACE-CLASSID: type=SP,str=0001.0A150208.5E53FF9D.0034,ss=4,sh,re=0.000,
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="Alt-Boundary-91982.0490821"
+Precedence: bulk
+Lines: 124
+List-Id: csi-b4.edu.kobe-u.ac.jp
+List-Software: fml [fml 4.0 STABLE (20040215/4.0.4_BETA)]
+List-Post: <mailto:csi-b4@edu.kobe-u.ac.jp>
+List-Owner: <mailto:csi-b4-admin@edu.kobe-u.ac.jp>
+List-Help: <mailto:?body=help>
+List-Unsubscribe: <mailto:?body=unsubscribe>
+X-TERRACESPAM: YES       (SR:0.00)
+  (by Terrace)
+X-TERRACE-CLASSID: type=BU,str=0001.0A150208.5E541601.002C,ss=3,sh,re=0.000,
+
+--Alt-Boundary-91982.0490821
+Content-type: text/plain; charset="ibm852"
+Content-transfer-encoding: QUOTED-PRINTABLE
+Content-description: Mail message body
+Í am a hacker who has access to yoür operatíng system.
+Í also have full access to yoür accoüňt.
+
+Í've been watchíng yoü for a few months now.
+The fact ís that yoü were ínfected wíth malware throügh an adült síte that yoü vísíted.
+
+Íf yoü are not famílíar wíth thís, Í wíll explaín.
+Trojan Vírüs gíves me füll access and control over a compüter or other devíce.
+Thís means that Í can see everythíng on yoür screen, türn on the camera and mícrophone, büt yoü do not know aboüt ít.
+
+Í also have access to all yoür contacts and all yoür correspondence.
+
+Why yoür antívírüs díd not detect malware?
+Answer: My malware üses the dríver, Í üpdate íts sígnatüres every 4 hoürs so that yoür antívírüs ís sílent.
+
+Í made a vídeo showíng how yoü satísfy yoürself ín the left half of the screen, and ín the ríght half yoü see the vídeo that yoü watched. Wíth one clíck of the moüse,
+Í can send thís vídeo to all yoür emaíls and contacts on socíal networks. Í can also post access to all yoür e-maíl correspondence and messengers that yoü üse.
+
+Íf yoü want to prevent thís, transfer the amoünt of $950(USD) to my bítcoín address (íf yoü do not know how to do thís, wríte to Google: 'Büy Bítcoín').
+
+My bítcoín address (BŤC Wallet) ís: 18Jro9LNFqBQarcc63WYGf3w7PdDAiwXpk
+
+After receívíng the payment, Í wíll delete the vídeo and yoü wíll never hear me agaín.
+Í gíve yoü 48 hoürs to pay.
+Í have a notíce readíng thís letter, and the tímer wíll work when yoü see thís letter.
+Fílíng a complaínt somewhere does not make sense becaüse thís emaíl cannot be tracked líke my bítcoín address.
+Í do not make any místakes.
+
+Íf Í fínd that yoü have shared thís message wíth someone else, the vídeo wíll be ímmedíately dístríbüted.
+
+Best regards!

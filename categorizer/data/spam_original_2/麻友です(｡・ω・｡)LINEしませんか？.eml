@@ -1,0 +1,98 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:3e07:0:0:0:0:0 with SMTP id t7csp2451099oot;
+        Sat, 26 Sep 2020 18:40:51 -0700 (PDT)
+X-Received: by 2002:a9d:787:: with SMTP id 7mr4807964oto.202.1601170851467;
+        Sat, 26 Sep 2020 18:40:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601170851; cv=none;
+        d=google.com; s=arc-20160816;
+        b=e8IvpJWBYlCNtfQE3/F/8kmDTpq0QazvtqdajHfGGFY4bxCIzK8erVfeQ+odJpDIRD
+         wPF+KoKL/r25/les1GnoiykGsgxj3tk1ZL9DP367FMsNm/xkw/ffxngNCkasQqbcUZlC
+         2cTsrhqAsr1bLtHr7BoZuwOzvOokRphPyTGXqOiCCBF4el4qoysBd47d7Do/Plghfm6y
+         MPxLtjcTQA6b9nYs8eODu48pRuTlKnXW4Xl3wF1UDjKfftyWoEMn9RsxqNl2ssnW1NGW
+         0fEeWe0CR6ZwQR3kq5RfdcMpV3G7zKGjkGv0ZScNVlc8R2hrvsvjSl6oRtuT6idHPLuW
+         RFTw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Y4iy6vIPexDDlnjptXEZb4Nrg9fUgnB/1zLmtqqqoSk=;
+        b=gZK4hC4XZf5DscJrUkgfop/HCGzSycl8LiJS9HfQWB9dc1M8R6GlmKZNVCWPttHFUW
+         LzQlaH9+kc/t5eAzIpFhDrm3hnan9UkB7oDasSvztVQEj++2PdnxVCO8QS1npsAFt5RZ
+         BHRutD23EetIqILBw2B5/35aaEI3AD8ahpbyCDnZC87ebxWMXquXCj9GidvTa5qdHkER
+         3qpjFMEY4VF0P4NhyC8ml6Fu6TN2zVFNMDjSkrHm6FPZ1cNntIDM6BG5g8kRrIM1QB6l
+         bRQssF4Hm309kH0tDzNA+EoMsJ0UpWOCFvn3VHf2ArMWbR+JixGeVkUDWFl6MNsVzyiq
+         cCOw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=an4RKVoI;
+       spf=pass (google.com: domain of dsahfihiq77@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=dsahfihiq77@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <dsahfihiq77@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id k1sor1523759oij.145.2020.09.26.18.40.51
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Sat, 26 Sep 2020 18:40:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of dsahfihiq77@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=an4RKVoI;
+       spf=pass (google.com: domain of dsahfihiq77@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=dsahfihiq77@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=Y4iy6vIPexDDlnjptXEZb4Nrg9fUgnB/1zLmtqqqoSk=;
+        b=an4RKVoI2GRsDJu90RJDFU1PkbTmmZykLK5huTYTK1kvY5L7EYitWjnDslQ3XfDljm
+         JT4at3e0jpaqEMVY2mTgEli3vzwPaJkKHCua2DpUpXJ0ciiCAdYqfYV80Af2ABmQoZXP
+         tsV2KNlkC5oj8hGebNQmJfwT4Slu/sjHPkm1XQu+D6Cjt9e5brWhRnAm7vSklrzL9vcl
+         JhvZrXfsoDi33C4HIxpygXMudlLxl41qlX3mZYtvG7TO2QNwNoPMHWYG8k4KmJUq5Dyr
+         cqKlC1uWQjViWzvSAfCsvWmsLXXhYGxLfkefkOPJEWaHVk6cswabM6dysj3FaEevEH8G
+         pvUw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=Y4iy6vIPexDDlnjptXEZb4Nrg9fUgnB/1zLmtqqqoSk=;
+        b=T0C35D0il1zjajRYAX9AkINZd2TD1QrcL1CLXYVeHk2P/bJqI4H8MLctQRs3TEu5zk
+         ZXPI7F241ipk7Wq5AWtwv5RcVFELEyP/6u76QpG8oTFydAfxysD72pgIVuShWDYyVk9v
+         fqMNp/+wuB7ogwCt5zDvBuMOI0V5TagIBl4UdwK8BesIV40bgj5FeVnlBoOC4Ax9G7KY
+         r0VLQbnVcEmr18GG0FC5Iedf8CXkjd34kA66nMlGpABzpHiaH006YEJn27DMNre7ytC2
+         Bs7AZ6BSblzTyP9sL/rd7uGYjy/tVe1WWCsrqEvkqFQTcviuedMOBFhhc4dkT68tUh7s
+         v9DA==
+X-Gm-Message-State: AOAM532IerJI6BN1yJIjNvjzciczCLs330QpwP+BhLOdeU48tdiB1gx4
+	yp5fk760TNtXU2BaebArioSzgXOguDEQdkBuExo=
+X-Google-Smtp-Source: ABdhPJyrkCN/juIqIcrPy7PTyF0XFAw/qcSqhI6KaiAY9moIW+gUHt7RpOAG+lg5mXZsXjRbS7yNVAOPnggKRZISWbc=
+X-Received: by 2002:aca:abc7:: with SMTP id u190mr2398095oie.146.1601170850359;
+ Sat, 26 Sep 2020 18:40:50 -0700 (PDT)
+MIME-Version: 1.0
+From: mail <dsahfihiq77@gmail.com>
+Date: Sun, 27 Sep 2020 10:40:39 +0900
+Message-ID: <CALCG-e2BEDvJMWwA-v-B3ZpaHikDPU1NVZp85jXbgW6ik_8p6Q@mail.gmail.com>
+Subject: =?UTF-8?B?6bq75Y+L44Gn44GZKO+9oeODu8+J44O7772hKUxJTkXjgZfjgb7jgZvjgpPjgYvvvJ8=?=
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000c2bd0805b041a3ff"
+Bcc: deepsky2221@gmail.com
+
+--000000000000c2bd0805b041a3ff
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+44GT44KT44Gr44Gh44Gv44O844O+KM+JYCApLw0KTElOReOBi+OCieODnuODg+ODgeODs+OCsOOC
+reODo+ODs+ODmuODvOODs+OBo+OBpuOBiuefpeOCieOBm+OBjOadpeOBn+OBruOBp+ODoeODg+OC
+u+ODvOOCuOmAgeOCieOBm+OBpuOBhOOBn+OBoOOBjeOBvuOBl+OBnyjvvaHjg7vPieODu++9oSkN
+CuS9leOBi+OBrue4geOBoOOBqOaAneOBhuOBruOBp+OAgeOCguOBl+OCiOOBi+OBo+OBn+OCiUxJ
+TkXjgZfjgb7jgZvjgpPjgYvvvJ8NCklE6YCB44KL44Gu44Gn5Y+L6YGU6L+95Yqg44GK6aGY44GE
+44GX44G+44GB44GZ4pmhDQrjgqLjgqTjgrPjg7Pjga/nmb3jgYTjgavjgoPjgpPjgZPjgajmmKDj
+gaPjgabjgovjgoTjgaTjgafjgZko56yRKQ0KQOOBpOOBkeOBquOBhOOBqOaknOe0ouOBl+OBpuOC
+guimi+OBpOOBi+OCieOBquOBhOOBv+OBn+OBhOOBquOBruOBp+awl+OCkuS7mOOBkeOBpuOBj+OB
+oOOBleOBhOOBrXzPie+9pe+9gG8p776J4oCdDQoNCuKWvOm6u+WPi+OBleOCk+OBrkxJTkUgSUTi
+lrwNCkBtYXl1dQ0K
+--000000000000c2bd0805b041a3ff
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+Hello over Isuzu (ω`) /
+I received a message from LINE about the matching campaign, so I sent a message (. ・ Ω ・.)
+I think it's something to do, so why don't you LINE if you like?
+I will send you an ID, so please add a friend ♡
+The icon is a white cat (laughs)
+If you don't add @, you can't find it even if you search, so please be careful | ω ・ ｀ o) ﾉ ”
+
+▼ Mayu's LINE ID ▼
+@mayuu

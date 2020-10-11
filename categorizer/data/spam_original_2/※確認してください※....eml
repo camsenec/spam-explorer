@@ -1,0 +1,51 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:655d:0:0:0:0:0 with SMTP id z29csp2339236oog;
+        Sat, 5 Sep 2020 02:34:33 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzF6KoTalR8WZ4ygPplfzzL/DGWZhMaNSdUe8hg8dXN7jyN9GAbINnG7gEdPBs0h3wR3S8g
+X-Received: by 2002:a37:bf03:: with SMTP id p3mr11360208qkf.94.1599298473712;
+        Sat, 05 Sep 2020 02:34:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1599298473; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EzFEy/hK2RQah6L3wpoG/5N3XSSZikbhvPs6AOraFqr5+kMuawWH/z8C01tHIs15Sf
+         YmiHOBG6f49q5EAzBASvtB5KX+4hdng+cUNTd7Mg1l/+6A85lzoJ2sR4x9xHWgGOiIfc
+         aRfopqoD+Lb6wCPN96g6vFdK9igy9qlm0DzFw8AcF88elqf/tdO9wf0WQPcN+9rUT3Lr
+         vrCEmVoCJYIDcG8NY8opG6mfNP1kOt9sPimIV4OGnx5EtBJkljc0vJx9XqIj62Mb+gZi
+         awCmYOZueaYn4vAw7Sr9iwDBD067Bl/BrrMxXPqT/h48ZNJGDqeOqdeDqpSL7ulbW/rH
+         ogOQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:mime-version:content-transfer-encoding:date:from:subject
+         :to;
+        bh=Bybg/+XnGuHCSv/g2ar96ayotN8Npqsw6jlT9hOEiMs=;
+        b=tEpCqIAJcfIwha6Sl3NwRw86km0om9Ry3BAE+wiLhVuwAJfR8ViW7NAUASQ033N0eS
+         eA8r/7nhcpTeBLWt5tqjIhrzg4QZMAPldP30EcEV56XIPsBW4beR4QFJFl9XcDaHElWq
+         wI/OsbAeSIYSOLoyYcbYxMlhB0QOfJUzivxTpJSNR9LuymF/kQd63eInnbC3FGWqZfZ1
+         ei0JETcXeaSgmHippIpufrpoK5N/leIZcX+D/NEqLD1gQoaIkFtEaKSPrXaKbylXKIZV
+         DAOfOsveLmkK5RxEwxpHzhasK8LDAGdzwoAthd/th1cZHPBanFFGJcBm5+q84z8ot7Zp
+         V16Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of mailmaster@k8dpbj4fs6rm.com designates 3.81.10.202 as permitted sender) smtp.mailfrom=mailmaster@k8dpbj4fs6rm.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=k8dpbj4fs6rm.com
+Return-Path: <mailmaster@k8dpbj4fs6rm.com>
+Received: from ec2-3-81-10-202.compute-1.amazonaws.com (ec2-3-81-10-202.compute-1.amazonaws.com. [3.81.10.202])
+        by mx.google.com with ESMTPS id a7si6807683qtm.238.2020.09.05.02.34.32
+        for <deepsky2221@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 05 Sep 2020 02:34:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mailmaster@k8dpbj4fs6rm.com designates 3.81.10.202 as permitted sender) client-ip=3.81.10.202;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of mailmaster@k8dpbj4fs6rm.com designates 3.81.10.202 as permitted sender) smtp.mailfrom=mailmaster@k8dpbj4fs6rm.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=k8dpbj4fs6rm.com
+To: deepsky2221@gmail.com
+Subject: =?UTF-8?B?4oC756K66KqN44GX44Gm44GP44Gg44GV44GE4oC7Li4u?=
+From: =?UTF-8?B?6Zuj5rOi44CA5a+/5LmL?= <mailmaster@k8dpbj4fs6rm.com>
+Date: Sat, 05 Sep 2020 18:31:15 +0900
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+Message-Id: <A7A371C6FC80634009-06034090506-0900534006@q6ehesn7lhoyrr5yg.xyz>
+
+http://i4mg7kk.com/FnJAKr
+
+
+I was doing this kind of work in the first half of 2020
+With the spread of the new coronavirus (COVID-19) worldwide and restrictions on the movement of humans, I think it is possible that robots will play an important role in such situations. ■ Robots receive orders and make drinks "Robots ...

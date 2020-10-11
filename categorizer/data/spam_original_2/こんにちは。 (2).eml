@@ -1,0 +1,86 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:1784:0:0:0:0:0 with SMTP id 126csp2044500ooe;
+        Sat, 29 Aug 2020 01:47:07 -0700 (PDT)
+X-Received: by 2002:a0c:fe47:: with SMTP id u7mr2072417qvs.1.1598690827473;
+        Sat, 29 Aug 2020 01:47:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1598690827; cv=none;
+        d=google.com; s=arc-20160816;
+        b=MWbousPx9nWOD4ehNX+om8ExJa3Ju39QbOIMYw6CQ193ucQ8jhYQIk/SaHWQ1jUAys
+         ApQFpWIpWFGlMHuL7BLzw588ykWoZqBkSquD4NcjZNTuSfWtb4dvbZS5GG10Jj+pAzMZ
+         9F2sEBWS58JHqkX3e/YO5fXrLasTKMf6BZRblUJjEKI0t4/AX7jzV0BLLlp37TB03pja
+         f3H9mmMpplnmLYfiQL+tMgZW6IMRuVth2L3Fz0UcMKSJYIClku+fJgiByZLQzT5X9fNc
+         ur4GB02X768fZn/TVAKOHk1W79FVMKORi2Tp0xbTLY56PGZFqbQmIu3xs2D5vb285h0W
+         owbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=b1886/KcbfbSLPb0A38QkRGH8jJnwXiVcpoGTyexbKc=;
+        b=As2xNCvmQDCb/eeaOkWkwsLrJw4m3zaTonh7OlE599je2Y8fo7QiSei852yLhLp6NA
+         Du0o9ZwV/puThX6jXVA4cTyZLU8RCQFuFQDIMykWN5MCfB4W0yX6ev1zOLuu6sn3aBmj
+         4Qf7X0lepUedDFG8TW2fjWvc1HH6h0YJZy9U9W89KnrkZJebJN2/8tBgGWceTAMlxboO
+         TuZcOxMYqmOJGvurZH8nRLE8yOYDp/8tMWbENH1xGqDe39xe9K7CG8nrjkNnb/eP/Zc4
+         FKo1+YnvFOuKsPP/3fHKtUAFJRrbX+BuFhIw9g7t6w1DQ+ROMw/u0Q6M4XGebRd0OP0b
+         fwHA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=XIvpFO47;
+       spf=pass (google.com: domain of go8625fd@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=go8625fd@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <go8625fd@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id j14sor1446040qtq.60.2020.08.29.01.47.07
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Sat, 29 Aug 2020 01:47:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of go8625fd@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=XIvpFO47;
+       spf=pass (google.com: domain of go8625fd@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=go8625fd@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:reply-to:from:date:message-id:subject:to;
+        bh=b1886/KcbfbSLPb0A38QkRGH8jJnwXiVcpoGTyexbKc=;
+        b=XIvpFO47GrDPgTjkDBIvXzzVhsUpdgVrGYYqSsArLswavR6e6aV8Rr8uo6IqimS3RG
+         RS417GONx69Lme44RkhMJG6g1IhS+4hdBf1RUbrIYscMtKI3l5b5Lu3H9BU3K0ZcWtXE
+         N8Ec89zLZyMjofFQKr13vdWHJlqFPlMuM3ecHp7ASbuTc2T0nai/zqxN89zD+BJ3Rbrp
+         rBYaL11hCHKw8sM1aQdV5XXw4lBOArGbtrYqX44DQIhyC+9RjFb8u1r4IWVPc8SMMlKC
+         WjCJBDm3H6oizLzIQ9A/H6Jog8WTTCYsmm4dp5Y79lawle1kzj025WsUZCaEa5262Pne
+         tGqA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+         :subject:to;
+        bh=b1886/KcbfbSLPb0A38QkRGH8jJnwXiVcpoGTyexbKc=;
+        b=DSePf6ici5vm+VNnSGmaJilj8pRcHKNJ6U0PwMX1fxlLo+T9oscxVwCKiyq0umXm8D
+         BpdlGJj7in99izM9nZuSTF2CiE/UT5d9+uoI9oM4y9nBrIXmzgK0OplvE+Qt7JRbp6P4
+         KJQBEAZZCVHrb5dPlfhrAYAhrcfobrpxpnBvG6qiCrzDg5TRrq41ihxlfXonr52OqyXs
+         MbsmwZZ7Mt/gYnbj/IlmOKvtvIZwtD+0UEKCW42WyyRdcMN8NWB+Lbixdw0jvxj2Szl6
+         rAkXMWoR945aaZYS8Ey2MzPVJ1Ej6dxNQwOEDIW1U17GVYrlDWkIgyDd0OPqGnZP8Rcu
+         dq4g==
+X-Gm-Message-State: AOAM530V8urgJYqpHeu7ZPFuJKMw0ZAbPqvp4CdKwmf6svQCp9hCx/TZ
+	LqKxBKQeAgxGF/99+bAJgP6GNvKWG+ba6zqX298=
+X-Google-Smtp-Source: ABdhPJwqJUCQlKvJ8utcWzAA+F21bDnohzFE9La7Ks30qMvUQwJ3iGWoOxeGDO5xGeZ85BpRKgD1gkRPPa66yYCYE0c=
+X-Received: by 2002:ac8:44b5:: with SMTP id a21mr3466437qto.36.1598690826861;
+ Sat, 29 Aug 2020 01:47:06 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: cloud.racket597@gmail.com
+From: Gmail <go8625fd@gmail.com>
+Date: Sat, 29 Aug 2020 17:47:04 +0900
+Message-ID: <CAL-zB1LY2BwLb0cObuBxghr3inmWO8PV-YQBte7kvVXQ0idoeg@mail.gmail.com>
+Subject: =?UTF-8?B?44GT44KT44Gr44Gh44Gv44CC?=
+To: info_to_7556@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000d7427b05ae0036db"
+Bcc: deepsky2221@gmail.com
+
+--000000000000d7427b05ae0036db
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+Nice to meet you! I'm Serina.
+When I linked the app, I got some email addresses, so I emailed them.
+You don't know, right?
+If you like, why don't you talk on the line even when you are free (* ・ ω ・)
+I'm lonely because I live alone (x_x)
+
+My name is [@ 0 4 0 o h k d o]!
+There are also pictures, so please come and see them ~

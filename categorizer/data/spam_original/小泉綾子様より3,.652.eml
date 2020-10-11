@@ -1,0 +1,54 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:3e07:0:0:0:0:0 with SMTP id t7csp864584oot;
+        Thu, 24 Sep 2020 18:14:06 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyfopLTwJHRT7c0lwxvIBQB5YQ4rTKVZJDca0wem5VG2QPRk0llFCCoDFm+HVHQWLnHT7+a
+X-Received: by 2002:adf:e9c1:: with SMTP id l1mr1659762wrn.68.1600996445927;
+        Thu, 24 Sep 2020 18:14:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600996445; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SegZ6gw5Ym7dN9IvOE4lwLH0XF/H0OY3zxqNhtPc9AEtlCBnY3gR5AqKZWvy6yAgWP
+         dN/eCbMU9Haoc+IRHhrpuIMg8zA06EmUTAkymLtd4cZgiZrdRvzt1I08Km5rHuWf9c0/
+         L1Yyx33W/GATOlnMNVOWj6IwmCCspd+b4MIcKKyh7B4G5Ekw9G83hlKP490Ly1rZcj6R
+         ZR6lUqla2xFtUFqYW5O8y2pHWsGaMINXq+8LGkGJ65iAKkw6QqEsrPX/fyiPXUNI1skR
+         YqBVprpEgpc67/sPymqLJtYbLy1LiNs5UxBw72iy/lS4Fy4PhD08CCQrRiBLFyRufAlh
+         buhg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:message-id:from:subject:to
+         :date;
+        bh=X/1gzTBnMHgYkVXn+TirABusOAO6HIV1yZV3S3XONYY=;
+        b=l9CqsFN58FbILx7ozWDMOQ8/K72nNcNq5R9uzx5L/54W+ICV6uvT9vRy6/QXT0ABND
+         ODrJd6IWFoE7l61cgumkfnU+6YTLgbMeRSKF8M7auEkZ/JPr09pBKFhh4Hpe4mkmXUPp
+         8Hyn17BDXPdBZyz0cl8P2fSWsfxwy0NFwwWdmaWUDWVzxkOWafH8syq/Xpaui9k76Gvz
+         QnUcJfDrTMuSO5ho7J2JdEqMiIT9b9bZAyecTFm8SR07Mm6JTQNb8qVjTJxDY9/Qi5FS
+         eSyeyTQ9/Wo1sLhO1v/d0otJkh5Sy5uX2iOT9pm3ZktVgOqxhKk4KS6HTKoQExcltb+Z
+         6h1Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return@rurtcigfyy.com designates 54.75.20.217 as permitted sender) smtp.mailfrom=return@rurtcigfyy.com
+Return-Path: <return@rurtcigfyy.com>
+Received: from ec2-54-75-20-217.eu-west-1.compute.amazonaws.com (ec2-54-75-20-217.eu-west-1.compute.amazonaws.com. [54.75.20.217])
+        by mx.google.com with ESMTPS id w11si1026983wrc.205.2020.09.24.18.14.05
+        for <deepsky2221@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 24 Sep 2020 18:14:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return@rurtcigfyy.com designates 54.75.20.217 as permitted sender) client-ip=54.75.20.217;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return@rurtcigfyy.com designates 54.75.20.217 as permitted sender) smtp.mailfrom=return@rurtcigfyy.com
+Date: Fri, 25 Sep 2020 10:03:42 +0900 (JST)
+To: =?iso-2022-jp?B?GyRCJTIlOSVITU0bKEI=?= <deepsky2221@gmail.com>
+Subject: =?ISO-2022-JP?B?LhskQj4uQHQwPTtSTU0kaCRqGyhCMywuNjUy?=
+From: =?iso-2022-jp?B?GyRCPi5AdDA9O1IbKEI=?= <return@rurtcigfyy.com>
+Message-ID: <202009250103424926005039fo1FD.1@le3wk1dsa1.5e3jsf1mlf.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+New message
+"The effects of unknown diseases in China are occurring in various places. 』\
+↓ Click here for the text ↓
+http://week-ci8.com/pc/member/sendMail.php?direct_user_cd=17925392&direct_password=3652&M_MAIL_SEQ=62865470
+
+
+
+
+The space business is finally in full swing! !! Attention here! Who can take the lead in the next generation of civilization! ??
+Questionnaire survey on ice cream (6th) ■ Less than 60% of people eat ice cream at least once a week in the summer. Over 20% more than once a week in winter. More than 30% of people "eat mainly in the hot season" and less than 30% "eat all year round, regardless of the season". ■ In the scene of eating ice cream, "snack / snack" is more than 50% of the users, and "when it is hot", "when relaxing", "when you want something sweet", "after bathing", etc. are in the 20% range. Among those who eat frequently in summer, "before and after dinner" and "after taking a bath" tend to be slightly higher. ■ What is important for people who eat ice cream?

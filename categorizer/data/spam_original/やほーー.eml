@@ -1,0 +1,82 @@
+Delivered-To: deepsky2221@gmail.com
+Received: by 2002:a4a:655d:0:0:0:0:0 with SMTP id z29csp2971636oog;
+        Sat, 5 Sep 2020 23:13:50 -0700 (PDT)
+X-Received: by 2002:a2e:87c7:: with SMTP id v7mr5159819ljj.13.1599372830158;
+        Sat, 05 Sep 2020 23:13:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1599372830; cv=none;
+        d=google.com; s=arc-20160816;
+        b=s7fcozt1sKrq3qdGRnL6hWt5tT5HuJcCNkW5BDwZ0BFHZDJMojBUAJVW6OR4ldnweg
+         pRl7UMauwDm/Kl4ZdZXX3YE1r4kI/LbwI0Ta4iP4m4pcqzrBhimeBLCQd/U6VrSJH2Yb
+         I0RtKQ3RI8KbU60GajP6yJM8k5rQK0ANVuuPji00fJvFtaR8OvLpTjSBzppLFSdqkXzC
+         WO3tufrBClwuMgj6z+0COk2v50YwAqvwXfPOox5CiD8zYbn2J7HiYZMwVGh4COzS2yzg
+         x5o/5KHm5gAQIFOJi4OqbZVhojaBvFsQjKOnbfp+K8r30vGPruf+yRAKakbve7kvH9ab
+         yt9g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=rNyhiVJyMdebasI4rgj+UtoLdR1SGjhe/0vULfMrG9g=;
+        b=V6/EOfHuDpTsaWuvWpzocxbK7XoMqD84GBG4pHLu8j8+B9EYG/skaSVC8BOdIpBQdP
+         3LNb+Q7YbN+4lNzUJC+l/mYwFEJ7RK3auMEswaTUQ+Jk3k02aWN6j+gWaBSc5416P7RP
+         iCw8b3hSxmL//ZoH9RFkrM6/dZIzXfHwgT8rTb34lhgHjkSRnEMVd1gZBNkRTLw/UNcX
+         sucFYE1VrpASjwhPniM3Uco0KcEH/iZiXnF1S7LRZtJsHQIvrZK4hae/AlKGdUTiTYNu
+         fShu8YqryUfJJc1ATKjg5q0Ni43aCBkawciByppoO+00RQti447sfJHCeiGZhgwlW9QW
+         Ha5A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bacSTprB;
+       spf=pass (google.com: domain of right0114pass@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=right0114pass@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <right0114pass@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id x139sor2665819lff.73.2020.09.05.23.13.49
+        for <deepsky2221@gmail.com>
+        (Google Transport Security);
+        Sat, 05 Sep 2020 23:13:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of right0114pass@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bacSTprB;
+       spf=pass (google.com: domain of right0114pass@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=right0114pass@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=rNyhiVJyMdebasI4rgj+UtoLdR1SGjhe/0vULfMrG9g=;
+        b=bacSTprB+w4nBKGsijJ98FfjnCIF9mg1VPqT1gohYYtRQLqzzaPaKYuOXkptwiYphH
+         Gs0R/XbZ1Dm4p/dL1Bp30zv9BGd5e4kmLj4F7r03yYLUV/soQg76TEIzpDIyZKnyrVDY
+         aw41/xt9ebBQ4HG8tWzSCnm1BQK7wcyvp6zwk12PPnYK32JYtjmu8u0ScfndS7hE9awx
+         R87uUCBZfJ/Tn0hjt0F6NG5B1E8QQhedQVVzbf6mINtXzsL70j8oQVDIBH94b7NzTjT0
+         E9A+qoeHzkyaS+bwfoi+1K4SA58rd+eWNavkX8G96ZjDKzOFL2hCiMGwVFa/dxo/UpmK
+         IqaQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=rNyhiVJyMdebasI4rgj+UtoLdR1SGjhe/0vULfMrG9g=;
+        b=bt//0UrUOsYtuXIePS/REN/LEX0fynNUD+88QqfNPbvx0yCGk0i8mtixLwPNNz9EBd
+         CWaErsQDaTShvKvmOiDykWuhrIR3vT4TxxByNZB2+o5lVygFpV8ZJfR5Fi8cMFvOtUO5
+         wJWsaTHOn7TMStVxa1/Dir4DIBGGyBP/MnIwDWqtgDL+vt1s8jTeFSe2H04EAQ404JpZ
+         8ev1NntpQtozExwoW3oMiOcSze9KokAeAhXiEgTnV1Pi4VzFNOhFv5ZStb51pOwFCjVD
+         NUkR7dLKwktJc6R5PageXKzBM8NFQQ1Ev1XJZ3qgEMRVek6MZagQvEJPtT4/IdlEGMBx
+         /aWw==
+X-Gm-Message-State: AOAM530hAaqwxluMezsvd7K8qWKTc8EFS5119MqD22HkLhQoabHvzo0e
+	tjlndCCYOYWYzoT9/kleCHICHbdKCU+zPtyl6qU=
+X-Google-Smtp-Source: ABdhPJx7iUg1S2s+4bZDiOL8grozPSEU0GnxSlQHVQyrhjHhhFeC+ahLcFVBeZKNPAE9aSsRwJufBFx4mbiBug/PRuY=
+X-Received: by 2002:a19:674f:: with SMTP id e15mr641142lfj.50.1599372829632;
+ Sat, 05 Sep 2020 23:13:49 -0700 (PDT)
+MIME-Version: 1.0
+From: Gmail <right0114pass@gmail.com>
+Date: Sun, 6 Sep 2020 15:13:41 +0900
+Message-ID: <CAAH__y8TirNa3XJL-eUShdZm_joECpo17syV2VS_9OmKjCh5zQ@mail.gmail.com>
+Subject: =?UTF-8?B?44KE44G744O844O8?=
+To: info_to_7556@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000005faad405ae9f012a"
+Bcc: deepsky2221@gmail.com
+
+--0000000000005faad405ae9f012a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+Mahiro!
+I found a mail address when I was fishing for an address book, but I met someone somewhere, right? ??
+I'm just free now, so if you're a man, I want you to talk on the line ///
+
+[@ 3 0 9 i x f s t]
+↑ This is the account I always use!
+There are also pictures, so please be familiar with it ♪
