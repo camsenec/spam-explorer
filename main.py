@@ -86,7 +86,7 @@ if __name__=='__main__':
         time.sleep(5)
 
         #check mail from gmail box[by spam_receiver]
-        message_save_file_path = "mails/inbox/message_" + str(communication_num) + ".txt"
+        message_save_file_path = "mails/inbox/message_" + str(communication_num) + ".eml"
         message_body = receive_routine(spam_sender, message_save_file_path)
 
         #classify(spam or ham) and categorize (induce chat/money/hyperlink/reply)
