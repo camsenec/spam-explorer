@@ -78,7 +78,7 @@ def main(query, message_file_path):
     raw_message, message_body = get_message(service, "me", query, count=1)
     #someimplementation
     with open(message_file_path, mode="w") as f:
-        f.write(raw_message + '\n\n' + message_body)
+        f.write(raw_message)
 
     return message_body
 

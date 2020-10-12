@@ -7,11 +7,9 @@ def extract_scammer_name(message):
     ml = MonkeyLearn('d31c9827434f85201fc8ba34de9fa26a2ff91936')
     message = re.sub('\n', '', message)
     message = re.sub('\r', '', message)
-    print(message)
     data = [message]
     model_id = 'ex_SmwSdZ3C'
     result = ml.extractors.extract(model_id, data)
-    print(result.body)
     scammer_name = result.body[0]["extractions"][0]["parsed_value"]
     return scammer_name
 
@@ -60,6 +58,7 @@ def generate_mail(message, category_tag_list, reply_number):
             constants.scammer_name = scammer_name
         else:
             inserted["scammer_name"] = constants.scammer_name
+            scammer_name = constants.scammer_name
 
         reply_text = reply(inserted, reply_number)
         return reply_text

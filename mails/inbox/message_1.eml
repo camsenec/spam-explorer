@@ -1,83 +1,74 @@
 Delivered-To: deepsky2221@gmail.com
-Received: by 2002:a4a:418e:0:0:0:0:0 with SMTP id x136csp5879668ooa;
-        Sun, 11 Oct 2020 13:25:00 -0700 (PDT)
-X-Received: by 2002:a7b:c1c2:: with SMTP id a2mr7745629wmj.23.1602447899992;
-        Sun, 11 Oct 2020 13:24:59 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1602447899; cv=none;
+Received: by 2002:a4a:418e:0:0:0:0:0 with SMTP id x136csp8157529ooa;
+        Mon, 12 Oct 2020 15:22:41 -0700 (PDT)
+X-Received: by 2002:adf:e4c4:: with SMTP id v4mr7092253wrm.79.1602541361003;
+        Mon, 12 Oct 2020 15:22:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1602541361; cv=none;
         d=google.com; s=arc-20160816;
-        b=ebee2RuFhpVUolF7vQt9JvkwhM/4tBT9KpY1d9xZwI2TKj3cT9Ix8lIsCH6rwZdOk/
-         G8YlCJYIjPHsDNjLvr5y56wok3iWYaPygzyQfXD10dTle9KXM1Sx6oM8ybrdcSjg9gC7
-         dFpuKqYi+Yfw5qRZDsFaAdbjEROzw+J9ehbu9DmJJxsVG5WCWYJsIdYUSBcaf7jvFr0p
-         8ghSgx0KcFVxx0ZlNcmrZqocosrkRLXlrQgKi3wXe25nTfV8adH8MqTlhbvdSKzedynG
-         CbZIjAU4utHDXF/Of+Pgj5c4aIj9U/ab0bXj9z60IPswkdat/METreaLVlAS3R1HdO/8
-         omAQ==
+        b=upRtnz9yvQ8uNip5zq8UzaHyBJlr5dIK8BHljZjIo4MQFuN1stT0N2/K+C+j13jcD7
+         7E1ut+xiZr8RSgOCq/BrDDsGdXw8achNWlFDm9nwmYuaIVJLNZlCNAjjHswzChbS3JnJ
+         9SBfZCSYT4meJxUAPsTRwcqnDedYd9Jvsw2h9JQUvIsq21lXrC7HWTMVuuAMtCF7Nb2m
+         q0RlZBTQPDQ5GTzP5sII+HiZjJRTeG4emkWy65sCAzoBkU3YRzimOpDBWYEkimFSlLIg
+         ZKvi8vducQTE2f44IT0a6lCtjeMRXZwQmaLMIb5CVNgP77NrE5GccQLHjgOglfpbRL+T
+         IQNg==
 ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
         h=to:subject:message-id:date:from:mime-version:dkim-signature;
         bh=p3+E9YTGQO5mIwxxYmjxXAJK3rvG51yZURMNuA57Jeg=;
-        b=Sk0VY4Jy3UUoMX/diiFpnpNTrN/BJWMOJ+rpO0g1XYiqokjJzQ2rWw3U7sq2JPtfZA
-         32QhxTxZPY0cFEKbT4O5leV62Cre7vHo+nOFHwSQt1G3WTns3w3+7xl0z8pX2N8z1lPw
-         sqtOd3ocqJiF75/To2PVMgSyGFn7JNt8JtqkP1Rg98AHI9+gOrEiefo8y80JKTdf3Lvb
-         ZjrACgM7dvbrDaRrX5+FeRgyWOfdmOvOKfFdFUDjNW+lovcPARTM7rDnCzVfuVm4h39M
-         1SP+PajadWpppZooHA/GNWcfjwWbsZXjJwOvSfOM2KYcl0HR3U17G5bnaWkVrNcsX7Iz
-         sTag==
+        b=dxLaV0dNE/Pmny5RAQm59nhHXIOE2dqT1gzK1gzV+iDSkC3WdAGMfZokTC7upIHER/
+         URvitDZzPxHal8H9anqE7rPMNk4VUeIPJMhfXJFV8BA8v/9liU6fZencIHhaxrQw8bf5
+         k+8S5QHZpX+pmzC2W3D5owUA7yaBwo/12wUYJIlKoqNc4n5cOa47eQKcwi7D2v0Mcxcj
+         UuTV50UKIyJqKjVKGCe+eS8GZobRsy8dujRssnjFlnJmEv8euS/c0FrXgFrnPm9gShmP
+         ZjbrXXf0Fzb6L//F4MimSZ4S2qjW2NVJ1MX54hIQoXQTEuQ9AJVgS1RsW5FcQU5ffZ7O
+         Tspg==
 ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20161025 header.b=nC6+o0sE;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SX05Kht8;
        spf=pass (google.com: domain of rudolphan2221@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rudolphan2221@gmail.com;
        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
 Return-Path: <rudolphan2221@gmail.com>
 Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
-        by mx.google.com with SMTPS id y12sor3742532wro.4.2020.10.11.13.24.59
+        by mx.google.com with SMTPS id j24sor3773605wrd.11.2020.10.12.15.22.40
         for <deepsky2221@gmail.com>
         (Google Transport Security);
-        Sun, 11 Oct 2020 13:24:59 -0700 (PDT)
+        Mon, 12 Oct 2020 15:22:40 -0700 (PDT)
 Received-SPF: pass (google.com: domain of rudolphan2221@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
 Authentication-Results: mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20161025 header.b=nC6+o0sE;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SX05Kht8;
        spf=pass (google.com: domain of rudolphan2221@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rudolphan2221@gmail.com;
        dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
         d=gmail.com; s=20161025;
         h=mime-version:from:date:message-id:subject:to;
         bh=p3+E9YTGQO5mIwxxYmjxXAJK3rvG51yZURMNuA57Jeg=;
-        b=nC6+o0sEbjjO7RxCbLUdTrx3DNHKVRZcm2Wfq5peLLCZPevCKa58/4vy1TYxvuz7jR
-         pQZGKOMf75tgO6Xab2WWCt6SHsaQqCEfvwSdKauVRqdQsnJROmOI1POU9MPib1EsKVjq
-         ySXPmrQhnTeS7t5jkIf08ji9xHttwgeX4qdfTl+A3A51P+BqLDec3n9tiK7OWlVSxDlq
-         GVUoFpC/z90Ed53Z4H8QXF7WwtuQEvAOW75YGqlwTETMrR6tHZLYwWGu/xiy3+Pe2M9K
-         OZXMpPpVibadRkUUvRfl0Ep31L6sHk6h+yL845Q7rqGe2DyoS5OrgedgPUTVgRzPiSVM
-         2ScA==
+        b=SX05Kht8RQ5njZ9PNVuhBNv0BYouo87T+KaTTpIodIGrjGPJzime0rBnPraFG/kCLC
+         y2es56l0ViT8zaRrcgAPnqXUKltNTo6vy024teO9n9V2A638Hn23tnh5jcQthZNckdrf
+         zDjnEoC/V6Sn4zr9ODljY4A0VW0OuLxHiXWplBAm1InR3qrvqWg8atLFzfDpTjaIAIRV
+         9NX8xWGTYUsrKpfcF6edDucD+dllAhH7gfaFGsipr+F8L/4BgVuU1068tiBxzQOhytbJ
+         zTpfVsrCS+IdZzBMG1JA3meh3StEGNf8BO01khr/0hE1tROetyfqHgClnl7l2r1/y2LK
+         jGJg==
 X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
         d=1e100.net; s=20161025;
         h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
         bh=p3+E9YTGQO5mIwxxYmjxXAJK3rvG51yZURMNuA57Jeg=;
-        b=Ov/JbLVorNioZIHpWRPUxBFvyPfnkf2pMd9Tn1FqAMDqr2f3V+OmcT+5jTSk3thWnQ
-         nZEIOQforAX1FNGwq4/H7PVIaC+1DlvY4rgOVniZtrlf6F15Zxs+v18cPSeYG24P1n7w
-         iazOcVTcpX5kqN+nE9POClaRtcQR0AQ9BZvZlgxZaexwembOo9jaaMrM2hQIkSOFCKWF
-         uE7lt+opVS6I1wkq410kNJCQUQANrVDUjhKKeaH2hynoLGeyPu+XHpmraTdLlGRvDhso
-         pIRDUERSAOQbj8Ng6XyUY444nDBnLN/82i2AQz+CdfxFWVNj84v/CjCrPPne4oNXdMXk
-         x7Yg==
-X-Gm-Message-State: AOAM531YNVcpaAsNVaTEWz3qaKT86VuzrUVb7j4jVnoP8nOra/NFh5/D
-	x7sCFPeI4u90F9armMOgFyzN6RWsZiakj2yVcuty5oN2yVOu6Q==
-X-Google-Smtp-Source: ABdhPJx7eY/DrG5J5ysGC02vtW/T0WP0pbFkuZqIe9LfaNCkp124pBTtsfNF/9v+8oJR/PpvXUn2DyHi9PWIw1H/l9I=
-X-Received: by 2002:adf:9e06:: with SMTP id u6mr26502501wre.208.1602447899536;
- Sun, 11 Oct 2020 13:24:59 -0700 (PDT)
+        b=BppRKDVIqCyTPyVn2HkSo6eTWlO+zAQnTC56RS2oTH5S4y10vs1we4x9pl3H8U3MY1
+         4ZtQMKIdao8YcM7vau5LdUk71yK+AAIcFofoiTwuDQO+5uJZmE+iYyUF7uN9k+6xfgw5
+         P8iNXiwTFb237pvVI7L22kLAmzyS/XacgBOQrnoOncNC+PfMnGzhY8QkHSWLd9VuItEz
+         vUXaYWucH0m6SYN2n5rWD8eSJMIi4MUFA/ZF0YIjFtI5VLj3PVWSf2klB6y7kuYOpG/P
+         FkHYmNnTtDyS2iglq7jsjh6LEmYHSLefGMN6kizIkpgtrD7SJgLA4p5ukoDjJlSW3JZV
+         EDeA==
+X-Gm-Message-State: AOAM531l30UrkXeYOEJBs39BL8zbuxZygLePQ1Kp0me4Xv2UU9X2UUwI
+	Jw6UBAuFyj0dWUUqWURai+FUwArdUpIQ2gIEXSNxIejwce5SZQ==
+X-Google-Smtp-Source: ABdhPJx8zqKdN4cuSxlVBd/NOsG+V1AnUQUgIc8KBt5bo8EVijVJVpBNbefxoTdlqvctfeplvZrLu88hNq6JW57z6Uo=
+X-Received: by 2002:adf:fd82:: with SMTP id d2mr32433584wrr.304.1602541360516;
+ Mon, 12 Oct 2020 15:22:40 -0700 (PDT)
 Received: from 1039323562633 named unknown by gmailapi.google.com with
- HTTPREST; Sun, 11 Oct 2020 13:24:59 -0700
+ HTTPREST; Mon, 12 Oct 2020 15:22:40 -0700
 MIME-Version: 1.0
 from: rudolphan2221@gmail.com
-Date: Sun, 11 Oct 2020 13:24:59 -0700
-Message-ID: <CADyTQqxKrdwERQX-6D7CjG_i9xf2YezZ20zMdDhrJSh52vTgCw@mail.gmail.com>
+Date: Mon, 12 Oct 2020 15:22:40 -0700
+Message-ID: <CADyTQqycW4ur_eJpaXAyRYyRpirSULgk7dYTpNKag8uNZcjR2w@mail.gmail.com>
 Subject: test
 To: deepsky2221@gmail.com
 Content-Type: text/plain; charset="UTF-8"
-
-Complements of the day,
-
-I am Bowman, I am Professional Lawyer, I have something important
-Urgently to discuss with you concerning your late Japanese family,
-Waiting for your respond to proceed,
-
-Bowman
-
 
 Complements of the day,
 

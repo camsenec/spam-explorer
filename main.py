@@ -14,7 +14,7 @@ easy_ham_path = 'classifier/data/easy_ham/'
 def train():
     # 1. Data Loading and Training for constructing the learning model
     # Spam Training
-    print('\nClassifier Training...')
+    print('\nTraining SPAM-HAM Classifier...')
     spam_training_set = {}
     ham_training_set = {}
     spam_training_set, file_count_spam_1 = trainer.train(spam_path, spam_training_set)
@@ -30,7 +30,7 @@ def train():
     # calculating the occurrence for each term
     for term in ham_training_set.keys():
         ham_training_set[term] = float(ham_training_set[term]) / file_count_ham
-    print('done.\n')
+    print('Done.\n')
 
     return spam_training_set, ham_training_set
 
@@ -88,20 +88,37 @@ if __name__=='__main__':
         #check mail from gmail box[by spam_receiver]
         message_save_file_path = "mails/inbox/message_" + str(communication_num) + ".eml"
         message_body = receive_routine(spam_sender, message_save_file_path)
+        print("[Exchange ", str(communication_num) + "]", "Mail Received")
+        print("[Exchange ", str(communication_num) + "]", "Received Mail Contents")
+        print("------------------------------------------------------")
+        print(message_body)
+        print("[Exchange ", str(communication_num) + "]", "Saved to ", message_save_file_path)
+        time.sleep(5)
 
         #classify(spam or ham) and categorize (induce chat/money/hyperlink/reply)
+        print("\n[Exchange ", str(communication_num) + "]", "Classifying...")
         result = classify(message_save_file_path, spam_training_set, ham_training_set)
-        print("SPAM or HAM", result)
+        print("[Exchange ", str(communication_num) + "]", "This mail is ", result)
         if result == "HAM":
             break
         category_tag_list = categorizer.categorize(message_save_file_path)
+        print("[Exchange ", str(communication_num) + "]", "The category of the mail is (chat, link, money, reply)", category_tag_list)
+        time.sleep(5)
 
+        print("\n[Exchange ", str(communication_num) + "]", "Generating Reply...")
         #generate reply mail
         reply_text = mail_generator.generate_mail(message_body, category_tag_list, communication_num)
         message_reply_file_path = "mails/draft/reply_" + str(communication_num) + ".txt"
         with open(message_reply_file_path, mode = "w") as f:
             f.write(reply_text)
+        print()
+
+        print("[Exchange ", str(communication_num) + "]", "Generated Mail Contents")
+        print("------------------------------------------------------")
+        print(reply_text)
 
         #spam_receiver -> spam_sender
         send_routine(spam_receiver, spam_sender, subject, message_reply_file_path, "receiver")
-        time.sleep(5)
+        print("Sended")
+        print("======================================================\n\n")
+        time.sleep(10)
